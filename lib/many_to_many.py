@@ -17,7 +17,7 @@ class Author:
         return sum([contract.royalties for contract in self.contracts()])
 
     def sign_contract(self ,book, date, royalties):
-        return Contract(self, book, date, royalties)
+        return Contract( book, date, royalties)
 
 class Book:
 
